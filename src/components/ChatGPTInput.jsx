@@ -26,7 +26,7 @@ function ChatGPTInput() {
                 Authorization: `Bearer ${import.meta.env.VITE_OPENAI_API_KEY2}`, // Ensure your environment variable is correctly set
             },
             body: JSON.stringify({
-                model: 'gpt-4',
+                model: 'gpt-3.5-turbo',
                 messages: messages.concat(newUserMessage), // Include the new user message in the request
                 max_tokens: 150,
             }),
